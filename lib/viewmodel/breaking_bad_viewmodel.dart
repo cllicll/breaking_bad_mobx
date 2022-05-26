@@ -9,6 +9,9 @@ class BreakingBadViewModel = _BreakingBadViewModelBase
     with _$BreakingBadViewModel;
 
 abstract class _BreakingBadViewModelBase with Store {
+  _BreakingBadViewModelBase() {
+    allCharList();
+  }
   final BreakingBadService breakingBadService = BreakingBadService();
 
   @observable
